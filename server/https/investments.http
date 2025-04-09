@@ -1,0 +1,69 @@
+### [1] 투자금 입력 (핀캐시, 뱅크샐러드, 야놀자)
+POST http://localhost:7777/api/investments
+Content-Type: application/json
+
+{
+  "investorName": "투자자1",
+  "password": "password1",
+  "companyId": "cm8shxv5j0002uuolqm9ekje7",  
+  "amount": 100,
+  "comment": "기대되는 스타트업이에요!"
+}
+
+###
+
+### 투자자2
+POST http://localhost:7777/api/investments
+Content-Type: application/json
+
+{
+  "investorName": "투자자2",
+  "password": "password2",
+  "companyId": "cm8shxv5k000quuols40utrif",
+  "amount": 80,
+  "comment": "기술력이 탄탄합니다."
+}
+
+### 투자자3
+POST http://localhost:7777/api/investments
+Content-Type: application/json
+
+{
+  "investorName": "투자자3",
+  "password": "password2",
+  "companyId": "cm8shxv5k0008uuolvlxmuybt", 
+  "amount": 80,
+  "comment": "기술력이 탄탄합니다."
+}
+
+###
+
+### [3] 전체 가상 투자 내역 조회 (개별 투자 리스트)
+GET http://localhost:7777/api/investments
+
+###
+
+### [4] 기업별 누적 투자 현황 요약 조회
+GET http://localhost:7777/api/investments/status
+
+###
+
+### [5] 투자자1의 투자 수정 (예: 금액: 100 → 120)
+PUT http://localhost:7777/api/investments/cm8r1otbi0003uu4wam2hg7sh
+Content-Type: application/json
+
+{
+  "password": "password1",
+  "amount": 120,
+  "comment": "금액을 조금 더 올렸습니다!"
+}
+
+###
+
+### [6] 투자자3의 투자 삭제
+DELETE http://localhost:7777/api/investments/cm8r1pbm10005uu4waghwhdg7
+Content-Type: application/json
+
+{
+  "password": "password2"
+}
