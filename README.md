@@ -5,10 +5,12 @@
 - [발표자료](#발표자료)
 - [파일 구조](#파일-구조)
 - [배포 주소](#배포-주소)
+
   
 ### 프로젝트 소개
 - 주제:View My Startup
 - 프로젝트 기간: 2025. 03. 21 ~ 2025. 04. 10
+
 
 ### 발표자료
 ![FS_6기_5팀_ViewMyStartup_최종발표자료_1](https://github.com/user-attachments/assets/823e889e-0531-412a-9d33-7f047b8b05d2)
@@ -39,9 +41,9 @@
 ![FS_6기_5팀_ViewMyStartup_최종발표자료_26](https://github.com/user-attachments/assets/005e13e9-aade-478e-9da8-cb16b27d5383)
 
 
-### 파일 구조
 
-<pre><code>```bash
+### 파일 구조
+<pre><code>bash
 FS/
 ├── client/ # 프론트엔드 (React + Vite)
 │ ├── node_modules/
@@ -87,11 +89,11 @@ FS/
 ├── package.json  
 ├── package-lock.json
 └── README.md
-```</code></pre>
+</code></pre>
+
 
 
 ### 배포 주소
-
 - client url: [https://view-my-startup-fs6.netlify.app/
 ](https://vmstartup.netlify.app/)
 - 구성
